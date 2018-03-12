@@ -1,0 +1,177 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Reservation</title>
+	<style>
+		
+		/* layout */
+
+		* {
+			padding: 0;
+			margin:0;
+		}
+
+		body {
+			color: white;
+			font-family: Century Gothic;
+			font-size:15px
+		}
+
+		.container {
+			margin:auto;
+			background-color: whitesmoke;
+			padding-top: 80px;
+		}
+
+		/* style for navigation */
+
+		.nav {
+			min-width: 100%;
+			height: 50px;
+			text-align: right;
+			padding-top: 25px;
+			background-color: teal;
+			position: fixed;
+			box-shadow: 0px 2px 7px #bbb;
+		}
+		.brandname {
+			float:left;
+			margin-left: 20px;
+		}
+
+		a {
+			font-style: normal;
+			font-size: 15px;
+			text-decoration: none;
+			line-height: 10px;
+			margin-right:20px;
+		}
+
+		.link {
+			color: #eee;
+		}
+
+		.active {
+			color: white;
+		}
+
+		/* style for content */
+
+
+		.wrapper {
+			margin: auto;
+			padding: 50px 100px;
+			height: 100%;
+		}
+
+		.login {
+			height: 200px;
+			width: 30%;
+			background-color: white;
+			border: 1px solid teal;
+			padding: 15px;
+			color: #444;
+		}
+
+		.sidebar {
+			height: 200px;
+			width: 100%;
+			background-color: white;
+			padding: 15px;
+			color: #444;
+			box-shadow: 0px 2px 7px #bbb;
+		}
+
+		input {
+			margin-top: 10px;
+			font-size: 17px;
+		}
+
+		input[type="text"], input[type="password"], select {
+			height:30px;
+			width:100%;
+			font-size: 17px;
+			color: #101010;
+		}
+	
+		.submit {
+			height:33px;
+			width:93px;
+			border: none;
+			border-radius: 2px;
+			background: teal;
+			color: white;
+			padding: 6px 10px 10px 10px;
+		}
+
+		table {
+			width: 100%;
+		}
+
+		td {
+			width: 100%;
+			padding: 0px 5px;
+		}
+
+		/* style for content */
+
+		.footer {
+			float:left;
+			min-width: 100%;
+			height:30px;
+			text-align: center;
+			padding-top: 20px;
+			background-color: teal;
+			margin-top: 10px;
+		}
+
+	</style>	
+</head>
+<body>
+	
+	<div class="nav">
+		<div class="brandname">
+			<h3>Reservation System</h3>
+		</div>
+		<div class="menu">
+			<a class="link active" href="#">Home</a>
+			<a class="link" href="#">FAQ</a>
+			<a class="link" href="#">About Us</a>
+		</div>
+	</div>
+
+	<div class="container">
+
+		<div class="wrapper">
+
+			<table>
+				<tr>
+
+					<td class="login">
+						<form action="dashboard.html">
+							<h3>Login</h3><br>
+							<p>Username</p>
+							<input type="text" id="username" name="username"><br>
+							<p>Password</p>
+							<input type="password" id="password" name="password"><br>
+							<input type="submit" class="submit" name="submit">
+						</form>
+					</td>
+
+					<td>	
+						<div class="sidebar">
+							<h3>Welcome!</h3><br>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae molestias atque placeat quibusdam vitae, incidunt nemo tenetur culpa nobis consequatur vero architecto necessitatibus quos a cupiditate quaerat, ipsam cum consequatur vero architecto necessitatibus quos a cupiditate quaerat, ipsam cum consequatur vero architecto necessitatibus quos avfdf dffdf.cupiditate quaerat.</p>
+						</div>
+					</td>
+
+				</tr>
+			</table>
+		</div>
+		<div class="footer">
+			<a class="link" href="#">Footer</a>
+		</div>
+		
+	</div>
+</body>
+</html>
